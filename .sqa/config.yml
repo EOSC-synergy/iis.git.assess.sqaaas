@@ -4,69 +4,69 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/john-shepherdson/iis:
+    github.com/openaire/iis:
       branch: master
-      repo: https://github.com/john-shepherdson/iis.git
+      repo: https://github.com/openaire/iis.git
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/john-shepherdson/iis git:
+      github.com/openaire/iis git:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-teal-armadillo.sh
-        container: qc.acc_randy-purple-grasshopper
+        - /usr/bin/env sh .sqa/script.stuffy-magenta-audemer.sh
+        container: qc.acc_crappy-buff-gorilla
   QC.Doc:
     repos:
-      github.com/john-shepherdson/iis find_doc_files.py:
+      github.com/openaire/iis find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-mustard-coyote.sh
-        container: qc.doc_zippy-auburn-deer
-      github.com/john-shepherdson/iis git:
+        - /usr/bin/env sh .sqa/script.skimpy-seashell-moorhen.sh
+        container: qc.doc_gloppy-chocolate-clam
+      github.com/openaire/iis git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-buff-maltese.sh
-        container: qc.doc_sickly-pear-liger
-      github.com/john-shepherdson/iis markdownlint:
+        - /usr/bin/env sh .sqa/script.sickly-ecru-uakari.sh
+        container: qc.doc_sunny-goldenrod-heron
+      github.com/openaire/iis markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-magenta-fowl.sh
-        container: qc.doc_shaky-persimmon-guppy
+        - /usr/bin/env sh .sqa/script.sunny-jade-devil.sh
+        container: qc.doc_craggy-periwinkle-angelfish
   QC.Lic:
     repos:
-      github.com/john-shepherdson/iis licensee:
+      github.com/openaire/iis licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-flax-dugong.sh
-        container: qc.lic_cheeky-mauve-anteater
+        - /usr/bin/env sh .sqa/script.cranky-mustard-urchin.sh
+        container: qc.lic_squirrely-magnolia-deer
   QC.Sec:
     repos:
-      github.com/john-shepherdson/iis bandit:
+      github.com/openaire/iis bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-razzmatazz-dalmatian.sh
-        container: qc.sec_lumpy-wheat-civet
+        - /usr/bin/env sh .sqa/script.lousy-red-dugong.sh
+        container: qc.sec_gimpy-red-oriole
   QC.Sty:
     repos:
-      github.com/john-shepherdson/iis checkstyle:
+      github.com/openaire/iis checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-orchid-iguana.sh
-        container: qc.sty_beady-jade-mayfly
-      github.com/john-shepherdson/iis flake8:
+        - /usr/bin/env sh .sqa/script.geeky-jade-heron.sh
+        container: qc.sty_breezy-peach-fowl
+      github.com/openaire/iis flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-cyan-mayfly.sh
-        container: qc.sty_foggy-rust-angora
-      github.com/john-shepherdson/iis jsonlint:
+        - /usr/bin/env sh .sqa/script.surly-blue-opossum.sh
+        container: qc.sty_tasty-teal-rhinoceros
+      github.com/openaire/iis jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-taupe-chihuahua.sh
-        container: qc.sty_homey-sepia-wrasse
+        - /usr/bin/env sh .sqa/script.goopy-azure-axolotl.sh
+        container: qc.sty_goopy-gold-salamander
   QC.Uni:
     repos:
-      github.com/john-shepherdson/iis pytest:
+      github.com/openaire/iis pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-champagne-malamute.sh
-        container: qc.uni_woolly-tan-bobcat
+        - /usr/bin/env sh .sqa/script.shabby-magenta-heron.sh
+        container: qc.uni_smelly-brass-koala
   QC.Ver:
     repos:
-      github.com/john-shepherdson/iis get_git_tags.py:
+      github.com/openaire/iis get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-saffron-hedgehog.sh
-        container: qc.ver_sunny-wisteria-whippet
+        - /usr/bin/env sh .sqa/script.whiny-peach-spoonbill.sh
+        container: qc.ver_crappy-puce-shark
 timeout: 5400

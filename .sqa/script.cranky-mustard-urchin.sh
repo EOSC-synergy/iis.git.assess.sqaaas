@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/john-shepherdson/iis &&
-    flake8 .
+cd github.com/openaire/iis &&
+    licensee detect . --confidence 60 --json 
 )

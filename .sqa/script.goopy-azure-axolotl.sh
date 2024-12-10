@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/john-shepherdson/iis &&
-    mvn checkstyle:check
+cd github.com/openaire/iis &&
+    jsonlint-cli "**/*.json"
 )

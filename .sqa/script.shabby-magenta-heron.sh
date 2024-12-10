@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/john-shepherdson/iis &&
-    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
+cd github.com/openaire/iis &&
+    pytest  --json-report  --json-report-indent 4
 )

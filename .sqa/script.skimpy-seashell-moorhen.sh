@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/john-shepherdson/iis &&
-    get_git_tags.py
+cd github.com/openaire/iis &&
+    find_doc_files.py --file_type all
 )
