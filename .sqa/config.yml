@@ -1,0 +1,72 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/john-shepherdson/iis:
+      branch: master
+      repo: https://github.com/john-shepherdson/iis.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/john-shepherdson/iis git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gloppy-teal-armadillo.sh
+        container: qc.acc_randy-purple-grasshopper
+  QC.Doc:
+    repos:
+      github.com/john-shepherdson/iis find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.geeky-mustard-coyote.sh
+        container: qc.doc_zippy-auburn-deer
+      github.com/john-shepherdson/iis git:
+        commands:
+        - /usr/bin/env sh .sqa/script.whiny-buff-maltese.sh
+        container: qc.doc_sickly-pear-liger
+      github.com/john-shepherdson/iis markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.homely-magenta-fowl.sh
+        container: qc.doc_shaky-persimmon-guppy
+  QC.Lic:
+    repos:
+      github.com/john-shepherdson/iis licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.messy-flax-dugong.sh
+        container: qc.lic_cheeky-mauve-anteater
+  QC.Sec:
+    repos:
+      github.com/john-shepherdson/iis bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-razzmatazz-dalmatian.sh
+        container: qc.sec_lumpy-wheat-civet
+  QC.Sty:
+    repos:
+      github.com/john-shepherdson/iis checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-orchid-iguana.sh
+        container: qc.sty_beady-jade-mayfly
+      github.com/john-shepherdson/iis flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.slimy-cyan-mayfly.sh
+        container: qc.sty_foggy-rust-angora
+      github.com/john-shepherdson/iis jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.skanky-taupe-chihuahua.sh
+        container: qc.sty_homey-sepia-wrasse
+  QC.Uni:
+    repos:
+      github.com/john-shepherdson/iis pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.lumpy-champagne-malamute.sh
+        container: qc.uni_woolly-tan-bobcat
+  QC.Ver:
+    repos:
+      github.com/john-shepherdson/iis get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-saffron-hedgehog.sh
+        container: qc.ver_sunny-wisteria-whippet
+timeout: 5400
