@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/openaire/iis git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-magenta-audemer.sh
-        container: qc.acc_crappy-buff-gorilla
+        - /usr/bin/env sh .sqa/script.sleepy-orange-mandrill.sh
+        container: qc.acc_breezy-razzmatazz-whippet
   QC.Doc:
     repos:
       github.com/openaire/iis find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-seashell-moorhen.sh
-        container: qc.doc_gloppy-chocolate-clam
+        - /usr/bin/env sh .sqa/script.woolly-salmon-eagle.sh
+        container: qc.doc_hazy-seashell-retriever
       github.com/openaire/iis git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-ecru-uakari.sh
-        container: qc.doc_sunny-goldenrod-heron
+        - /usr/bin/env sh .sqa/script.grumpy-orchid-hare.sh
+        container: qc.doc_craggy-olive-whippet
       github.com/openaire/iis markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-jade-devil.sh
-        container: qc.doc_craggy-periwinkle-angelfish
+        - /usr/bin/env sh .sqa/script.ready-seashell-lynx.sh
+        container: qc.doc_fuzzy-violet-dolphin
   QC.Lic:
     repos:
       github.com/openaire/iis licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-mustard-urchin.sh
-        container: qc.lic_squirrely-magnolia-deer
+        - /usr/bin/env sh .sqa/script.paltry-eggplant-zorse.sh
+        container: qc.lic_smelly-bronze-cassowary
   QC.Sec:
     repos:
       github.com/openaire/iis bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-red-dugong.sh
-        container: qc.sec_gimpy-red-oriole
+        - /usr/bin/env sh .sqa/script.muzzy-turquoise-bulldog.sh
+        container: qc.sec_scaly-red-koala
   QC.Sty:
     repos:
       github.com/openaire/iis checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-jade-heron.sh
-        container: qc.sty_breezy-peach-fowl
+        - /usr/bin/env sh .sqa/script.shaky-silver-monster.sh
+        container: qc.sty_slimy-lavender-starfish
       github.com/openaire/iis flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-blue-opossum.sh
-        container: qc.sty_tasty-teal-rhinoceros
+        - /usr/bin/env sh .sqa/script.flimsy-salmon-havanese.sh
+        container: qc.sty_hazy-sepia-frigatebird
       github.com/openaire/iis jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-azure-axolotl.sh
-        container: qc.sty_goopy-gold-salamander
+        - /usr/bin/env sh .sqa/script.zippy-maroon-dormouse.sh
+        container: qc.sty_muzzy-flax-albatross
   QC.Uni:
     repos:
       github.com/openaire/iis pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-magenta-heron.sh
-        container: qc.uni_smelly-brass-koala
+        - /usr/bin/env sh .sqa/script.thirsty-smalt-gharial.sh
+        container: qc.uni_nippy-ivory-coyote
   QC.Ver:
     repos:
       github.com/openaire/iis get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-peach-spoonbill.sh
-        container: qc.ver_crappy-puce-shark
+        - /usr/bin/env sh .sqa/script.tasty-malachite-zorse.sh
+        container: qc.ver_greasy-turquoise-mongrel
 timeout: 5400
