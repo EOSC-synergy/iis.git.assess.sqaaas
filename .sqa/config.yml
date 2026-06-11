@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/openaire/iis:
       branch: master
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/openaire/iis git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-orange-mandrill.sh
-        container: qc.acc_breezy-razzmatazz-whippet
+        - /usr/bin/env sh .sqa/script.dusk_lively_antelope.sh
+        container: qc.acc_maroon_timid_dhole
   QC.Doc:
     repos:
       github.com/openaire/iis find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-salmon-eagle.sh
-        container: qc.doc_hazy-seashell-retriever
+        - /usr/bin/env sh .sqa/script.zinnia_thankful_flounder.sh
+        container: qc.doc_alabaster_understanding_kangaroo
       github.com/openaire/iis git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-orchid-hare.sh
-        container: qc.doc_craggy-olive-whippet
+        - /usr/bin/env sh .sqa/script.watermelon_observant_python.sh
+        container: qc.doc_cinnamon_romantic_hydra
       github.com/openaire/iis markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-seashell-lynx.sh
-        container: qc.doc_fuzzy-violet-dolphin
+        - /usr/bin/env sh .sqa/script.malachite_mindful_hornbill.sh
+        container: qc.doc_hunter_skeptical_badger
   QC.Lic:
     repos:
       github.com/openaire/iis licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-eggplant-zorse.sh
-        container: qc.lic_smelly-bronze-cassowary
+        - /usr/bin/env sh .sqa/script.coffee_inventive_walrus.sh
+        container: qc.lic_champagne_unique_caribou
   QC.Sec:
     repos:
       github.com/openaire/iis bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-turquoise-bulldog.sh
-        container: qc.sec_scaly-red-koala
+        - /usr/bin/env sh .sqa/script.cinnabar_serene_frog.sh
+        container: qc.sec_marigold_compassionate_shark
   QC.Sty:
     repos:
       github.com/openaire/iis checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-silver-monster.sh
-        container: qc.sty_slimy-lavender-starfish
+        - /usr/bin/env sh .sqa/script.isabelline_ambitious_bullfrog.sh
+        container: qc.sty_champagne_logical_gull
       github.com/openaire/iis flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-salmon-havanese.sh
-        container: qc.sty_hazy-sepia-frigatebird
+        - /usr/bin/env sh .sqa/script.mauve_anxious_okapi.sh
+        container: qc.sty_currant_peppy_spren
       github.com/openaire/iis jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-maroon-dormouse.sh
-        container: qc.sty_muzzy-flax-albatross
+        - /usr/bin/env sh .sqa/script.pink_artistic_chinchilla.sh
+        container: qc.sty_daffodil_vibrant_mandrill
   QC.Uni:
     repos:
       github.com/openaire/iis pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-smalt-gharial.sh
-        container: qc.uni_nippy-ivory-coyote
+        - /usr/bin/env sh .sqa/script.nutmeg_positive_hydra.sh
+        container: qc.uni_kiwi_anxious_seal
   QC.Ver:
     repos:
       github.com/openaire/iis get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-malachite-zorse.sh
-        container: qc.ver_greasy-turquoise-mongrel
+        - /usr/bin/env sh .sqa/script.jade_alert_badger.sh
+        container: qc.ver_navy_insightful_grizzly
 timeout: 5400
